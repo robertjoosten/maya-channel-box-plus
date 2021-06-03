@@ -92,7 +92,10 @@ class SettingsDialog(QtWidgets.QDialog):
         :return: Threshold
         :rtype: float
         """
-        return self.settings.value("threshold", 0.75, type=float)
+        try:
+            return self.settings.value("threshold", 0.75, type=float)
+        except TypeError:
+            return float(self.settings.value("threshold", 0.75))
 
     @property
     def split_non_keyable(self):
@@ -100,8 +103,11 @@ class SettingsDialog(QtWidgets.QDialog):
         :return: Split non-keyable attributes
         :rtype: bool
         """
-        # for some reason using type=bool errors in py2
-        return bool(self.settings.value("split_non_keyable", False, type=int))
+        try:
+            # for some reason using type=bool errors in py2
+            return bool(self.settings.value("split_non_keyable", False, type=int))
+        except TypeError:
+            return bool(self.settings.value("split_non_keyable", False))
 
     @property
     def split_colour(self):
