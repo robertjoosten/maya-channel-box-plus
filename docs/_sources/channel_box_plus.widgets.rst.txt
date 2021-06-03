@@ -1,0 +1,16 @@
+channel\_box\_plus\.widgets package
+===================================
+
+.. automodule:: channel_box_plus.widgets
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   channel_box_plus.widgets.search
+   channel_box_plus.widgets.settings
+

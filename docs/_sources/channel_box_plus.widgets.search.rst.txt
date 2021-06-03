@@ -1,0 +1,7 @@
+channel\_box\_plus\.widgets\.search module
+==========================================
+
+.. automodule:: channel_box_plus.widgets.search
+    :members:
+    :undoc-members:
+    :show-inheritance:

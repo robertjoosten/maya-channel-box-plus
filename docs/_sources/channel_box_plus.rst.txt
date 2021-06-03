@@ -1,0 +1,23 @@
+channel\_box\_plus package
+==========================
+
+.. automodule:: channel_box_plus
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    channel_box_plus.widgets
+
+Submodules
+----------
+
+.. toctree::
+
+   channel_box_plus.install
+   channel_box_plus.utils
+

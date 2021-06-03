@@ -1,0 +1,7 @@
+channel\_box\_plus\.widgets\.settings module
+============================================
+
+.. automodule:: channel_box_plus.widgets.settings
+    :members:
+    :undoc-members:
+    :show-inheritance:

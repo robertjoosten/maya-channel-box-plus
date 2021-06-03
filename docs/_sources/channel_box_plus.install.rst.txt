@@ -1,0 +1,7 @@
+channel\_box\_plus\.install module
+==================================
+
+.. automodule:: channel_box_plus.install
+    :members:
+    :undoc-members:
+    :show-inheritance:
