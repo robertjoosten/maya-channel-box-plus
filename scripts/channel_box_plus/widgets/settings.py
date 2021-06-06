@@ -104,10 +104,9 @@ class SettingsDialog(QtWidgets.QDialog):
         :rtype: bool
         """
         try:
-            # for some reason using type=bool errors in py2
-            return bool(self.settings.value("split_non_keyable", False, type=int))
+            return bool(self.settings.value("split_non_keyable", 0, type=int))
         except TypeError:
-            return bool(self.settings.value("split_non_keyable", False))
+            return bool(int(self.settings.value("split_non_keyable", 0)))
 
     @property
     def split_colour(self):
@@ -129,7 +128,7 @@ class SettingsDialog(QtWidgets.QDialog):
 
     def apply(self):
         self.settings.setValue("threshold", self._threshold.value())
-        self.settings.setValue("split_non_keyable", self._split_non_keyable.isChecked())
+        self.settings.setValue("split_non_keyable", int(self._split_non_keyable.isChecked()))
         self.settings.sync()
         self.accept()
 
