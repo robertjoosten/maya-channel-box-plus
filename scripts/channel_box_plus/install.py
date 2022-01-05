@@ -40,7 +40,7 @@ def execute():
     # initialize search widget
     search_widget = widgets.SearchWidget(parent)
 
-    if parent_layout_count and MAYA_VERSION < 2020:
+    if parent_layout_count and MAYA_VERSION < 2022:
         item = parent_layout.takeAt(0)
         parent_layout.addWidget(search_widget)
         parent_layout.addItem(item)
